@@ -37,8 +37,13 @@ const MORSE_TABLE = {
     '-----':  '0',
 };
 
-function decode(expr) {
-    // write your solution here
+function decode(str) {
+    let outputString = '';
+    let arr = str.split(' ');
+    for(let i =0; i < arr.length; i++){
+      outputString += morse_code_alphabet[arr[i]];
+    }
+return outputString;
 }
 
 module.exports = {
