@@ -41,7 +41,7 @@ function decode(str) {
     let outputString = '';
     let arr = str.split(' ');
     for(let i =0; i < arr.length; i++){
-      outputString += morse_code_alphabet[arr[i]];
+      outputString += MORSE_TABLE[arr[i]];
     }
 return outputString;
 }
